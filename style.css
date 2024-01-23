@@ -105,6 +105,10 @@
     cursor: pointer;
     color: #cda5a5;
 }
+.calendar .month .prev:hover,
+.calendar .month .next:hover {
+  color: var(--primary-clr);
+}
 .calander .weekdays {
     width: 100%;
     height: 100px;
@@ -122,7 +126,7 @@
     align-items: center;
     justify-content: center;
 }
-.calander .days{
+.calander .days {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -132,7 +136,7 @@
     font-weight: 500;
     margin-bottom: 20px;
 }
-.calander .days .day{
+.calander .days .day {
     width: 14.28%;
     height: 89px;
     display: flex;
@@ -141,4 +145,100 @@
     cursor: pointer;
     color: var(--primary-clr);
     border: 2px solid #dbdad7;
+}
+.calander .days .day:hover {
+    background-color: var(--primary-clr);
+    font-size: 1.8rem;
+    color: #dbdad7;
+}
+.calander .days .prev-date,
+.calander .days .next-date {
+    color: #a299be
+}
+.calander .days .active {
+    position: relative;
+    font-size: 1.8rem;
+    color: #dbdad7;
+    background-color: var(--primary-clr);
+}
+.calander .days .active::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px 1px var(--primary-clr);
+}
+.calander .days .today {
+    font-size: 1.8rem;
+}
+.calander .days .event {
+    position: relative;
+}
+.calander .days .event::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    width: 75%;
+    left: 50%;
+    height: 6px;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    background-color: var(--primary-clr);
+}
+.calander .event:hover::after {
+    background-color: #dbdad7;
+}
+.calander .active.event::after {
+    background-color: #dbdad7;
+    bottom: 20%;
+}
+.calander .active.event {
+    padding: 10px;
+}
+.calander .goto-today {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    color: var(--primary-clr);
+}
+.calander .goto-today .goto {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #242582;
+}
+.calander .goto-today .goto input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    color: var(--primary-clr);
+    border-radius: 5px;
+}
+.calendar .goto-today button {
+    padding: 5px 10px;
+    border: 1px solid var(--primary-clr);
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--primary-clr);
+}
+.calendar .goto-today button:hover {
+    color: #e2e1dc;
+    background-color: var(--primary-clr);
+}
+.calendar .goto-today .goto button {
+    border: none;
+    border-left: 1px solid var(--primary-clr);
+    border-radius: 0;
 }
