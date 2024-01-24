@@ -29,14 +29,14 @@
 }
 .header h1{
     display: flex;
-    color: #e8edee;
+    color: #f64c72;
     align-items: center;
     justify-content: center;
     font-size: 35px;
 }
 .header h6{
     display: flex;
-    color: #e8edee;
+    color: #f64c72;
     align-items: center;
     justify-content: center;
     font-size: 25px;
@@ -241,4 +241,26 @@
     border: none;
     border-left: 1px solid var(--primary-clr);
     border-radius: 0;
+}
+.calander .goto-today .today-btn {
+    padding: 7px 12px;
+    border: 1px solid var(--primary-clr);
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    color: var(--primary-clr);
+}
+.calander .goto-today .goto-btn {
+    padding: 7px 12px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    color: var(--primary-clr);
+}
+.container .text-area input{
+    position: relative;
+    justify-content: right;
+    align-items: right;
+    padding: 10px 20px;
+    margin: 100px 3px 100px 100px;
 }
