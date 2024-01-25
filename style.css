@@ -263,4 +263,17 @@
     align-items: right;
     padding: 10px 20px;
     margin: 100px 3px 100px 100px;
+    border-radius: 20px;
+    color: var(--primary-clr);
+}
+.container .Add{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #f64c72;
+    background-color: #fff;
+}
+.contact. .Add:hover{
+    cursor: pointer;
+    background-color: #e2e1de;
+    color: var(--primary-clr);
 }
