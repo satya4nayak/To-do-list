@@ -162,6 +162,7 @@
     font-size: 1.8rem;
     color: #dbdad7;
     background-color: var(--primary-clr);
+    border-radius: 5px;
 }
 .calander .days .active::before{
     content: '';
