@@ -255,6 +255,14 @@
     cursor: pointer;
     color: var(--primary-clr);
 }
+.calander .goto-today .today-btn:hover {
+  padding: 7px 12px;
+  border: 1px solid var(--primary-clr);
+  border-radius: 5px;
+  background-color: #ffffffbe;
+  cursor: pointer;
+  color: #f64c72;
+}
 .calander .goto-today .goto-btn {
     padding: 7px 12px;
     border-radius: 5px;
